@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Opinion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">India Vote Survey .Com</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">National</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">States</a>
+                </li>
+                <!-- <li class="navbar__item">
+                    <a href="#services" class="navbar__links" id="services-page">Services</a>
+                </li> -->
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup">Vote Now</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <div class="main__img--container">              
+                <div class="main__img--card"><h1>Leading Seats</h1></div>
+            </div>
+            <div class="main__img--container">              
+              <div class="main__img--card"><h1>Vote Percentage</h1></div>
+          </div>            
+        </div>
+        <div class="home__btn">
+          <button class="main__btn"><a href="#sign-up">Cast Your Vote Now</a></button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+            </div>
+                
+            <div class="custom__select" id="controls">
+              
+                <div class="radioBtn">
+                  <input type="radio" id="option1" name="options" value="option1">
+                  <label for="option1">State Wise Results</label>
+
+                  <input type="radio" id="option2" name="options" value="option2">
+                  <label for="option2">Parliament Constituency wise</label>
+
+                  <input type="radio" id="option3" name="options" value="option3">
+                  <label for="option3">Assembly Constituency wise</label>
+                </div>
+
+              <select id="stateDropdown" disabled>                
+                <option value="" disabled selected>Select State/Union Territory</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="West Bengal">West Bengal</option>
+                <!-- Add more options for other states -->
+            </select>
+                <span class="custom__arrow"></span> 
+                <!-- <br> -->
+                
+
+                <select id="parliamentDropdown" disabled>
+                  <option value="">Select Parliament Constituency</option>
+                  <!-- Parliament constituencies will be populated dynamically based on the selected state -->
+              </select>   
+                <span class="custom__arrow"></span> 
+                <!-- <br> -->
+                
+
+                <select id="assemblyDropdown" disabled>
+                  <option value="">Select Assembly Constituency</option>
+                  <!-- Assembly constituencies will be populated dynamically based on the selected parliament constituency -->
+              </select>   
+                <span class="custom__arrow"></span> 
+                <!-- <br>           -->
+
+                <button class="main__btn"><a href="#">Show Results</a></button>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <!-- <div class="services" id="services">
+        <h1>Our Services</h1>
+        <div class="services__wrapper">
+          <div class="services__card">
+            <h2>Custom Colorways</h2>
+            <p>AI Powered technology</p>
+            <div class="services__btn"><button>Get Started</button></div>
+          </div>
+          <div class="services__card">
+            <h2>Are you Ready?</h2>
+            <p>Take the lepa</p>
+            <div class="services__btn"><button>Get Started</button></div>
+          </div>
+          <div class="services__card">
+            <h2>Full Gradients</h2>
+            <p>100 Combinations</p>
+            <div class="services__btn"><button>Get Started</button></div>
+          </div>
+          <div class="services__card">
+            <h2>Infinite Choices</h2>
+            <p>1000's of colors</p>
+            <div class="services__btn"><button>Get Started</button></div>
+          </div>
+        </div>
+      </div> -->
+  
+      <!-- Features Section -->
+      <div class="main" id="sign-up">
+        <div class="main__container">
+          <div class="main__img--container">
+            <div class="main__img--card" id="card-2">
+              <div class="login-container">
+                <form id="login-form">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" required>
+                  <button type="submit">Login</button>
+                </form>
+              </div>              
+            </div>
+          </div>
+          <div class="main__content">
+            <h1>Join Our Team</h1>
+            <h2>Sign Up Today</h2>
+            <p>See what makes us different</p>
+            <button class="main__btn"><a href="form.html" target="_blank" id="openPopup">Sign Up</a></button>         
+                
+          </div>
+          
+        </div>
+      </div>
+  
+      <!-- Footer Section -->
+      <div class="footer__container">
+        <div class="footer__links">
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>About Us</h2>
+              <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+              <a href="/">Careers</a> <a href="/">Terms of Service</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Contact Us</h2>
+              <a href="/">Contact</a> <a href="/">Support</a>
+              <a href="/">Destinations</a>
+            </div>
+          </div>
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Videos</h2>
+              <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+              <a href="/">Agency</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Social Media</h2>
+              <a href="/">Instagram</a> <a href="/">Facebook</a>
+              <a href="/">Youtube</a> <a href="/">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo">
+              <a href="/" id="footer__logo">Opinion POLL</a>
+            </div>
+            <p class="website__rights">© Dupes Infotech 2007. All rights reserved</p>
+            <div class="social__icons">
+              <a href="/" class="social__icon--link" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="/" class="social__icon--link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="/" class="social__icon--link"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="/" class="social__icon--link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="/" class="social__icon--link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    <script src="https://kit.fontawesome.com/dba80216b8.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
